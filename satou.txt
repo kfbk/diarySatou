@@ -1,0 +1,25 @@
+Nuxt+Content+CloudflareÇ≈ñ≥óøÇ≈ÉuÉçÉOÇçÏÇÎÇ§
+https://0115765.com/archives/6348
+
+Cloudflare Pages
+	ìoò^ÇµÇΩ
+
+npx create-nuxt-app Diary-of-a-day-late
+
+	? Project name: Diary-of-a-day-late
+	? Programming language: JavaScript
+	? Package manager: Npm
+	? UI framework: Vuetify.js
+	? Nuxt.js modules: Content - Git-based headless CMS
+	? Linting tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+	? Testing framework: None
+	? Rendering mode: Universal (SSR / SSG)
+	? Deployment target: Static (Static/Jamstack hosting)
+	? Development tools: jsconfig.json (Recommended for VS Code if you're not using typescript)
+	? What is your GitHub username? satou1497
+	? Version control system: Git
+
+	cd Diary-of-a-day-late
+        npm run dev				http://localhost:3000/
+
+
