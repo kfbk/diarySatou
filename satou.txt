@@ -1,10 +1,8 @@
 Nuxt+Content+Cloudflareで無料でブログを作ろう
 https://0115765.com/archives/6348
 
-Cloudflare Pages
-	登録した
-
-npx create-nuxt-app Diary-of-a-day-late
+１．サイトを作成
+	npx create-nuxt-app Diary-of-a-day-late
 
 	? Project name: Diary-of-a-day-late
 	? Programming language: JavaScript
@@ -22,4 +20,52 @@ npx create-nuxt-app Diary-of-a-day-late
 	cd Diary-of-a-day-late
         npm run dev				http://localhost:3000/
 
+	Nuxt.jsで作成したプロジェクトを動かすので
+	npm run build
+	npm run start
+git
 
+	git init
+	git add .
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin <remote-repo>
+	git push -u origin main
+
+２．terminalにて、
+	git init			「.git」フォルダーが作られる。ステージングエリアやローカルリポジトリが作成
+	git add .			ワークツリーからステージングエリアへとファイルを上げます
+	git commit -m "first commit"	 -m "message" とすることでエディタを起動せずにメッセージを残す
+
+３．ブラウザにて
+	github（https://github.com）でリモートリポジトリを作成する
+	右上の「New」ボタンON
+	Repository name　＝　diarySatou
+	「Create repository」ボタンON
+	次をコピー：https://github.com/kfbk/diarySatou.git
+
+４．Terminalにて
+	git remote add origin https://github.com/kfbk/diarySatou.git
+ 	git push -u origin master
+
+５．github確認
+	https://github.com/kfbk/diarySatou.git
+
+６．Cloudflareにログイン
+
+	Cloudflare Pages 登録した
+	[プロジェクトを作成]→	先程Pushしたプロジェクトを選択→[ビルドツール]でNuxtを選択。あとは自動でビルドが走る。
+	AddSite			https://github.com/kfbk/diarySatou.git
+	失敗（Invalid domain）
+	↓
+	メニュー「pages」から[Create a Project]からGithubアカウントを連携
+	Nuxtを選択。作成
+	https://diarysatou.pages.dev/kannariMountain に作成された
+
+７．Netlify
+
+	新規作成
+	AddSite			githubを指定
+	npm run build --> npm run generate
+	Settingにてサイト名の変更
+	https://diary-of-a-day-late.netlify.app/ で作成できた
