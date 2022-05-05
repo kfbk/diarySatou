@@ -20,17 +20,9 @@ https://0115765.com/archives/6348
 	cd Diary-of-a-day-late
         npm run dev				http://localhost:3000/
 
-	Nuxt.jsで作成したプロジェクトを動かすので
+	Nuxt.jsで作成したプロジェクトを動かすので（次の2つは必要かどうか不明）
 	npm run build
 	npm run start
-git
-
-	git init
-	git add .
-	git commit -m "first commit"
-	git branch -M main
-	git remote add origin <remote-repo>
-	git push -u origin main
 
 ２．terminalにて、
 	git init			「.git」フォルダーが作られる。ステージングエリアやローカルリポジトリが作成
