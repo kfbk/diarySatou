@@ -3,7 +3,8 @@
   <article class="content">
     <h2>{{ article.title }}</h2>
     <p>{{ article.description }}</p>
-    <p>last update: {{ formatDate(article.createdAt) }}</p>
+    <hr>
+    <!-- <p>last update: {{ formatDate(article.createdAt) }}</p> -->
     <nuxt-content :document="article"></nuxt-content>
   </article>
 </div>
