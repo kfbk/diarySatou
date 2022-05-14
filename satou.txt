@@ -61,3 +61,26 @@ https://0115765.com/archives/6348
 	npm run build --> npm run generate
 	Settingにてサイト名の変更
 	https://diary-of-a-day-late.netlify.app/ で作成できた
+
+----------------------------------------------------------------
+2022/05/13
+
+現在、Netlifyのものを使っている。Cloudflareは、日付が「1970年1月1日」になるので、使わない。
+昨日気が付いたのだが、Netlifyのものは日付が本日になる。ソースは「article.createdAt」で作成日のはず。
+ネットで調べたら次のがあった。
+
+@nuxt/contentのupdatedAt, createdAtがデプロイ時にリセットされる問題
+https://strip.koatech.info/articles/nuxt-content-git/
+
+記事の通り、次のように実行した。
+
+	nuxt-content-git をインストールする。
+		npm install nuxt-content-git
+
+	nuxt.config.jsのmodules
+		  modules: [
+	    'nuxt-content-git',
+	    '@nuxt/content',
+	  ],
+
+
