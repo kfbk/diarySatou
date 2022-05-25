@@ -3,8 +3,8 @@
   <article class="content">
     <h2>{{ article.title }}</h2>
     <p>{{ article.description }}</p>
+    <p>作成日: {{ $formatDate(article.createdAt)}}</p>
     <hr>
-    <!-- <p>last update: {{ formatDate(article.createdAt) }}</p> -->
     <nuxt-content :document="article"></nuxt-content>
   </article>
 </div>
@@ -13,10 +13,10 @@
 <script>
 export default {
   methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('ja', options)
-    }
+    // formatDate(date) {
+    //   const options = { year: 'numeric', month: 'long', day: 'numeric' }
+    //   return new Date(date).toLocaleDateString('ja', options)
+    // }
  },
 
   async asyncData({ $content, params }) {
