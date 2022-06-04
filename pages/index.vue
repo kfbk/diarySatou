@@ -5,7 +5,6 @@
       <li v-for="article in article" :key="article.slug">
         <nuxt-link :to="'/' + article.slug">
           <p>{{ article.title }} / {{ $formatDate(article.createdAt)}}</p>
-          <!-- <p>{{ article.title }} / {{ article.createdAt}}</p> -->
         </nuxt-link>
       </li>
     </ul>
